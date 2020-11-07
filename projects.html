@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shubham Pawar Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() { // makes sure the whole site is loaded 
+      $('#status').fadeOut(); // will first fade out the loading animation 
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+      $('body').delay(350).css({'overflow':'visible'});
+    })
+  </script>
+</head>
+<body>
+  <!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+<header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand">
+            	<a href="home.html"><h1>Shubham Pawar Portfolio</h1></a>
+           	</div>
+
+          	<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+           
+            <li id="navMenuButton">
+              <a href="home.html" onclick="$dc.loadMenuCategories();">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+            </li>
+            <li>
+              <a href="about.html">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li >
+                            <a href="work.html" >
+                              <span class="glyphicon glyphicon-th-list"></span><br class="hidden-xs"> Work Experience<b ></b></a>
+                                  
+              <li>
+              <a href="projects.html">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Projects</a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs"> Contact</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+<!-- Projects -->
+
+<div id="flip-cont" class="row">
+  <h2 style="color: white;">Projects</h2>
+  <a href="https://github.com/shubham5351/Fake-Review-Detection-">
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h4>Fake Review Detection Web app</h4>
+      <img src="https://images.unsplash.com/photo-1588852732799-de793c9c63a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Avatar" style="width:372px;height:138px;">
+      
+    </div>
+    <div class="flip-card-back">      
+      <h4> Fake Review detection on 20 Chicago Hotel Review Dataset using various supervised Machine Learning Techniques and classify the review whether it is fake or real.</h4>
+    </div>
+  </div>
+</div> 
+</a>
+
+<a href="https://github.com/shubham5351/Classification-of-Iris-dataset-ML-">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h4>Classification of iris dataset</h4>
+      <img src="https://images.unsplash.com/photo-1584132687515-13353564a54a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Avatar" style="width:372px;height:138px;">
+    </div>
+    <div class="flip-card-back">      
+      <h4>Classification of Iris flower using supervised Machine learning Classification Algorithm according to its species based on certain parameters.</h4>      
+    </div>
+  </div>
+</div> 
+</a>
+
+
+<a href="https://github.com/shubham5351/Shubham_Pawar_Portfolio">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h4>Personal Portfolio Project</h4>
+      <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Avatar" style="width:372px;height:138px;">
+    </div>
+    <div class="flip-card-back">      
+      <h4>Coursera guided project to build the personal portfolio using HTML and CSS.</h4>      
+    </div>
+  </div>
+</div> 
+</a>
+
+
+</div>
+
+</body>
+
+
+
+</html>

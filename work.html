@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shubham Pawar Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" >
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() { // makes sure the whole site is loaded 
+      $('#status').fadeOut(); // will first fade out the loading animation 
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+      $('body').delay(350).css({'overflow':'visible'});
+    })
+  </script>  
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+<header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand">
+            	<a href="home.html"><h1>Shubham Pawar Portfolio</h1></a>
+           	</div>
+
+          	<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+           
+            <li id="navMenuButton">
+              <a href="home.html" onclick="$dc.loadMenuCategories();">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+            </li>
+            <li>
+              <a href="about.html">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li >
+                            <a href="work.html" >
+                              <span class="glyphicon glyphicon-th-list"></span><br class="hidden-xs"> Work Experience<b ></b></a>
+                                  
+              <li>
+              <a href="projects.html">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Projects</a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs"> Contact</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+<!-- work Cards -->
+<div id="flip-cont" class="row">
+  <h2 style="color: white;">Work Experience</h2>
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      
+      <img src="https://media-exp1.licdn.com/dms/image/C561BAQHxYasGZi66GQ/company-background_10000/0?e=2159024400&v=beta&t=6PZKG1_nnOCakZzoB60GSmpPQdaPr56GTqVUlztsorM" alt="Avatar" style="width:372px;height:178px;">
+      
+    </div>
+    <div class="flip-card-back">
+      <h3>Data Science & Analytics Intern</h3>
+      <h4>(Aug2020 - Sep2020)</h4>      
+    </div>
+  </div>
+</div> 
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://media-exp1.licdn.com/dms/image/C560BAQEQxtxL7eTWNg/company-logo_200_200/0?e=1613001600&v=beta&t=vaQDljyMGAimS99it4tHUEl91zyMbuUmZud3V7AHuU0" alt="Avatar" style="width:372px;height:178px;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Web Development Intern</h3>
+      <h4>(Aug2020 - Sep2020)</h4>          
+    </div>
+  </div>
+</div> 
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGuByHM_j-aQA/company-logo_200_200/0?e=1613001600&v=beta&t=P2DNeACIHw2JRn5ncHA_QwEHWedmAknSQSYoQCjg5ds" alt="Avatar" style="width:372px;height:178px;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Participant at Contributor's Hack 2020</h3>
+      <h4>(Aug2020 - Oct2020)</h4>         
+    </div>
+  </div>
+</div> 
+
+</div>
+
+
+</body>
+
+
+</html>

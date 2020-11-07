@@ -1,0 +1,285 @@
+html {
+	overflow-x: hidden;
+	
+}
+body {
+	background-image: url(https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+/* header design */
+#header-nav {
+  background-color: #FFFFFF;
+  border-radius: 0;
+  border: 0;
+  opacity: 0.4;
+}
+#dmenu {
+  margin-top: 20px;
+}
+
+.navbar-brand h1 { /* Shubham name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 13px;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p span { /* Sky high */
+  vertical-align: middle;
+}
+
+#nav-list {  
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 2px;
+}
+#nav-list a {
+  color: crimson;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: lightgray;
+}
+#nav-list a span {
+  font-size: 1.8em;  
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top:-30px;
+}
+
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+/* Profile Card */
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.container h2 {
+	color: white;
+}
+
+/* resume button */
+
+a #res {
+	opacity: 0.6;
+	text-align: center;
+	color: white;
+}
+
+/* footer */
+
+footer {
+	text-align: center;
+	opacity: 0.7;
+}
+
+/* Work and Projects*/
+
+#flip-cont {
+  margin-left: 45px;
+  
+}
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+  float: left;
+  padding: 10px;
+  margin: 10px;
+
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#flip-cont {
+  padding: 5px;  
+}
+#flip-cont h2 {
+  text-align: center;
+  font-weight: bolder;
+  
+}
+
+/* Contact */
+.social-networks {
+	text-align: center;
+	padding: 5px;
+}
+
+#mail {
+	text-align: center;
+	color: white;
+}
+
+#mail a {
+	text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Portfolio name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /*  */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+    
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Footer */
+
+  /* End Footer */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #menu-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+  #flip-cont {
+    width: 360px;
+   
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+}
